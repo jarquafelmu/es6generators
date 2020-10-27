@@ -6,7 +6,6 @@ function askFoo() {
 }
 
 function run(generator) {
-  // your code goes here
   const it = generator();
 
   function go(result) {
@@ -22,7 +21,6 @@ function run(generator) {
 }
 
 run(function* () {
-  // improve: errors?
   try {
     const foo = yield askFoo();
     console.log(foo);
